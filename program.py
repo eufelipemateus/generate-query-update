@@ -14,7 +14,7 @@ for Prospect in Query:
         TipoTributo =  'RE'  if Tax.tipo_tributo =='regressivo'  else 'NO'
 
         Cpf = format_cpf(Prospect.cpf)                
-        SqlLine = (f"UPDSATE PESFISPP COD_OPCAO_TRIBUTO_CNTRADEP = '{TipoTributo}' WHERE NUM_CPF = '{Cpf}'.")
+        SqlLine = (f"UPDSATE PESFISPP COD_OPCAO_TRIBUTO_CNTRADEP = '{TipoTributo}' WHERE NUM_CPF = '{Cpf}';")
 
         Sql.add_query(SqlLine)        
         print(SqlLine)
