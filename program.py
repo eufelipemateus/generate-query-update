@@ -1,8 +1,8 @@
 from sqlobject import *
-from lib.util import format_cpf
 from model.TributacaoEntity import TributacaoEntity
 from model.UserEntity import UserEntity
-from lib.sql import SqlFile
+from utils.sql import SqlFile
+from utils.util import format_cpf
 
 Sql = SqlFile()
 Query = UserEntity.select()

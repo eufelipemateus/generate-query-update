@@ -1,5 +1,5 @@
 from sqlobject import *
-from lib.mysql import conn
+from utils.mysql import conn
 
 class TributacaoEntity(SQLObject):
     _connection = conn
